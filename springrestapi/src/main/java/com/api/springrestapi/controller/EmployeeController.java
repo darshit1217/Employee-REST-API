@@ -37,7 +37,7 @@ public class EmployeeController {
 	public String getAppDetails() {
 		return "App name: "+appName+" --App Version: "+appVersion;
 	}
-
+//	localhost:8080/employees?pageNumber=1&pageSize=3
 	@GetMapping("/employees")
 	public ResponseEntity<List<Employee>> getEmployees(@RequestParam Integer pageNumber,@RequestParam Integer pageSize) {
 		return new ResponseEntity<List<Employee>>(eService.getEmployees(pageNumber,pageSize),HttpStatus.OK);
