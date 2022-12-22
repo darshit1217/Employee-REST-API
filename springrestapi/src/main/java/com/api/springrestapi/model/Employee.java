@@ -20,7 +20,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 @Entity
 //@Table(name="employee")
 public class Employee {
-//	@TableGenerator(name="id",initialValue=10000)---> doubt in attributes
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 //	@Column(name="ID")
@@ -113,7 +113,7 @@ public class Employee {
 	
 }
 
-
+//@TableGenerator(name="id",initialValue=10000)---> doubt in attributes
 // We have use Lombok dependency so no need to 
 // create getters and setters, instead we use annotations 
 // for them 
